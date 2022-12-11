@@ -1,0 +1,232 @@
+@keyframes cf3FadeInOut {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.section__gallery {
+    background-color: var(--gallery-bg-color);
+}
+
+.gallery__container {
+    width: 100%;
+}
+
+.gallery__container {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.gallery__picture {
+    position: absolute;
+    width: calc(100% - 20px);
+    height: auto;
+
+    left: 50%;
+    top: -18%;
+    transform: translateX(-50%);
+
+    border-radius: 7.4px;
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+// .gallery__desktop--picture {
+//     position: absolute;
+
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: auto;
+
+//     // animation-name: cf3FadeInOut;
+//     // animation-timing-function: ease-in-out;
+//     // animation-iteration-count: infinite;
+//     // animation-duration: 5s;
+//     // animation-direction: reverse;
+// }
+
+.gallery__desktop--animation-hidden {
+    display: none;
+}
+
+@media screen and (min-width: 320px) {
+    .gallery__container {
+        min-height: 111px;
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .gallery__picture {
+        width: 279px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section__gallery {
+        background-color: transparent;
+    }
+
+    .gallery__picture {
+        position: static;
+        left: 0;
+        top: 0;
+        transform: translateX(0);
+
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 704px;
+        border-radius: 18px;
+    }
+
+    .gallery__container {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery__picture {
+        position: relative;
+        overflow: hidden;
+        width: 1013px;
+        height: 422px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        border-radius: 28px;
+        text-align: center;
+        object-fit: contain;
+    }
+
+    .gallery__container {
+        width: 1200px;
+        padding-left: 93px;
+        padding-right: 93px;
+    }
+
+    .gallery__desktop--picture {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+
+        animation-name: cf3FadeInOut;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 7s;
+        animation-direction: alternate;
+    }
+
+    .gallery__desktop--animation-hidden {
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%, 0);
+    }
+}
+
+// .gallery_image {
+//     display: none;
+
+//     @media screen and (min-width: 1200px) {
+//         position: absolute;
+
+//         display: block;
+
+//         width: 100%;
+//         height: 422px;
+//         object-fit: cover;
+//         margin-left: auto;
+//         margin-right: auto;
+//     }
+// }
+
+// .gallery__desktop--animation {
+//     width: 100%;
+//     @media screen and (min-width: 1200px) {
+//         transform: translateX(0);
+//         top: 0;
+//         left: 0;
+//     }
+// }
+
+// .section 4 background image {
+//     background-position: center;
+//     background-color: var(--background-black);
+//     background-size: cover;
+//     margin-left: auto;
+//     margin-right: auto;
+
+//      @media screen and (min-width: 768px) and (max-width:1199px){
+
+//         background-image: linear-gradient(
+//             to bottom,
+//             var(--green-bg-color) 12%,
+//             transparent 12%,
+//             transparent 83%,
+//             var(--green-bg-color) 83%,
+//             var(--green-bg-color) 100%
+//         ),
+//         url("./images/ice-cream-bg4");
+
+//         @media  (min-device-pixel-ratio: 2),
+//                 (min-resolution: 192dpi),
+//                 (min-resolution: 2dppx){
+//                     background-image: linear-gradient(
+//             to bottom,
+//             var(--green-bg-color) 12%,
+//             transparent 12%,
+//             transparent 83%,
+//             var(--green-bg-color) 83%,
+//             var(--green-bg-color) 100%
+//         ),
+//         url("./images/ice-cream-bg4@2x");
+//                 }
+//      }
+
+//     @media screen and (min-width: 1200px){
+//
+
+//          background-image: linear-gradient(
+//             to bottom,
+//             var(--green-bg-color) 6%,
+//             transparent 6%,
+//             transparent 72%,
+//             var(--green-bg-color) 72%,
+//             var(--green-bg-color) 100%
+//         ),
+//         url("./images/ice-cream-bg4");
+
+//         @media  (min-device-pixel-ratio: 2),
+//                 (min-resolution: 192dpi),
+//                 (min-resolution: 2dppx){
+//                     background-image: linear-gradient(
+//             to bottom,
+//             var(--green-bg-color) 6%,
+//             transparent 6%,
+//             transparent 72%,
+//             var(--green-bg-color) 72%,
+//             var(--green-bg-color) 100%
+//         ),
+//         url("./images/ice-cream-bg4@2x");
+//                 }
+// }
+// }

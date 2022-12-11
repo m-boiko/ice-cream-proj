@@ -1,0 +1,35 @@
+@import './base/container-contacts';
+@import './base/base';
+@import './base/container';
+
+@import './utils/mixins';
+@import './utils/variables';
+@import './utils/mixins-contacts';
+
+@import './layot/about';
+@import './layot/advantages';
+@import './layot/contacts';
+@import './layot/footer';
+@import './layot/sections-bg-image';
+@import './layot/gallery';
+@import './layot/reviews';
+@import './layot/products';
+@import './layot/header';
+@import './layot/hero';
+
+@import './layot/hero-modal';
+@import './layot/products-modal';
+@import './layot/location-modal';
+@import './layot/franchise-modal';
+@import './layot/read-more-modal';
+@import './layot/mobile-menu';
+
+@import './components/buttons';
+@import './components/modal-close-btn';
+@import './components/backdrop';
+@import './components/modal-container';
+@import './components/modal-form-input';
+@import './components/btn-up';
+
+// @import './components/container-contacts';
+

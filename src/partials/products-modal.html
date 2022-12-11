@@ -1,0 +1,85 @@
+<div product-modal class="backdrop is-hidden">
+  <div class="modal-products modal-container">
+    <button type="button" product-modal-close class="modal-close-btn">
+      <svg width="20" height="20">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="modal-products-form">
+      <h2 class="modal-products-form__title">Chololate icecream</h2>
+      <div class="modal-products-form-circle__item">
+        <div class="modal-products__circle--green"></div>
+      </div>
+      <ul class="modal-products-form__list">
+        <li class="modal-products-form__item">
+          <div class="modal-products-form__vitamins">
+            <p class="modal-products-form__value">320</p>
+          </div>
+          <p class="modal-products-form__text">Kcal</p>
+        </li>
+        <li class="modal-products-form__item">
+          <div class="modal-products-form__vitamins">
+            <p class="modal-products-form__value">4g</p>
+          </div>
+          <p class="modal-products-form__text">Protein</p>
+        </li>
+        <li class="modal-products-form__item">
+          <div class="modal-products-form__vitamins">
+            <p class="modal-products-form__value">8,2g</p>
+          </div>
+          <p class="modal-products-form__text">Fats</p>
+        </li>
+        <li class="modal-products-form__item">
+          <div class="modal-products-form__vitamins">
+            <p class="modal-products-form__value">40,4g</p>
+          </div>
+          <p class="modal-products-form__text">Carbs</p>
+        </li>
+      </ul>
+      <p class="modal-products-form__subtitle">Ingredients</p>
+      <ul class="ingridient__list">
+        <li class="ingridient__item">
+          <p class="ingridient__name">Milk</p>
+          <p class="ingridient__value">100ml</p>
+        </li>
+        <li class="ingridient__item">
+          <p class="ingridient__name">Belgian chocolate</p>
+          <p class="ingridient__value">20g</p>
+        </li>
+        <li class="ingridient__item">
+          <p class="ingridient__name">Cream</p>
+          <p class="ingridient__value">150ml</p>
+        </li>
+        <li class="ingridient__item">
+          <p class="ingridient__name">Milk</p>
+          <p class="ingridient__value">100ml</p>
+        </li>
+        <li class="ingridient__item">
+          <p class="ingridient__name">Sugar</p>
+          <p class="ingridient__value">40g</p>
+        </li>
+        <li class="ingridient__item">
+          <p class="ingridient__name">Vanilla sugar</p>
+          <p class="ingridient__value">10g</p>
+        </li>
+      </ul>
+      <div class="modal-products-form__labels">
+        <label class="modal-product-form__label">
+          <span class="modal-product-form__wrapper">
+            <input type="text" class="modal-form__input modal-products__input" name="name" pattern="[a-zA-Zа-яА-яІіЇї]+" minlength="3"
+              placeholder="Name" required />
+          </span>
+        </label>
+        <label class="modal-product-form__label">
+          <span class="modal-product-form__wrapper">
+            <input class="modal-form__input modal-products__input" type="tel" name="tel" placeholder="Fhone" />
+          </span>
+        </label>
+        <label class="modal-product-form__label">
+          <textarea class="modal-form__textarea modal-products-form__textarea" name="comment" placeholder="Comment"></textarea>
+        </label>
+      </div>
+      <button type="submit" class="button-yellow">Submit</button>
+    </form>
+  </div>
+</div>
